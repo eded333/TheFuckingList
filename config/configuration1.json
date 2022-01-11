@@ -1,0 +1,267 @@
+{
+  "name": "The Fucking List",
+  "description": "Updated every 12h, compilation of 100+ block lists, deduped, with some personal exclusions and exceptions.",
+  "homepage": "https://github.com/eded333/TheFuckingList",
+  "license": "GPLv3",
+  "sources": [
+    {
+      "name": "whitelist",
+      "source": "whitelist.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments"]
+    },
+    {
+      "name": "mmotti_regex",
+      "source": "https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "Validate"]
+    },
+    {
+      "name": "oisd.nl/edropRegexed",
+      "source": "https://oisd.nl/edropRegexed.php",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "Validate"]
+    },
+        {
+      "name": "GoodbyeAds-AdBlock-Filter",
+      "source": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "GoodbyeAds-YouTube-AdBlock-Filter",
+      "source": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-YouTube-AdBlock-Filter.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "hblock",
+      "source": "https://hblock.molinero.dev/hosts_adblock.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Zelo intelligence",
+      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/threat-intelligence.adblock",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Zelo doh-vpn-proxy-bypass",
+      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/doh-vpn-proxy-bypass.adblock",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Zelo Big",
+      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/big.adblock",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Zelo affiliate",
+      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/affiliatetracking.adblock",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "WindowsSpyBlocker Spy",
+      "source": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "Unified hosts = (adware + malware)",
+      "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "The Big List of Hacked Malware ",
+      "source": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "SPAM404",
+      "source": "https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Scam Blocklist by DurableNapkin",
+      "source": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Perflyst and Dandelion Sprout's",
+      "source": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Online Malicious URL Blocklist",
+      "source": "https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "oneoffdallas dohservers",
+      "source": "https://raw.githubusercontent.com/oneoffdallas/dohservers/master/list.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "OISD Domain Blocklist",
+      "source": "https://abp.oisd.nl/",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "notracking",
+      "source": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Malicious URL Blocklist",
+      "source": "https://curben.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Game Console Adblock List",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "DandelionSprout_AntiMalwareAdGuardHome",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "DandelionSprout_AdGuardHomeCompilationList-Notifications",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "EnergizedProtection Xtreme Extended",
+      "source": "https://block.energized.pro/extensions/xtreme/formats/filter",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "EnergizedProtection ULTIMATE",
+      "source": "https://block.energized.pro/ultimate/formats/filter",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "EnergizedProtection Regional",
+      "source": "https://block.energized.pro/extensions/regional/formats/filter",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Dan Pollock's List",
+      "source": "https://someonewhocares.org/hosts/zero/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "blocklistproject Tracking",
+      "source": "https://blocklistproject.github.io/Lists/adguard/tracking-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Scam",
+      "source": "https://blocklistproject.github.io/Lists/adguard/scam-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Redirect",
+      "source": "https://blocklistproject.github.io/Lists/adguard/redirect-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Ransomware",
+      "source": "https://blocklistproject.github.io/Lists/adguard/ransomware-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Phishing",
+      "source": "https://blocklistproject.github.io/Lists/adguard/phishing-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Malware",
+      "source": "https://blocklistproject.github.io/Lists/adguard/malware-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Gambling",
+      "source": "https://blocklistproject.github.io/Lists/adguard/gambling-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Fraud",
+      "source": "https://blocklistproject.github.io/Lists/adguard/fraud-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Drugs",
+      "source": "https://blocklistproject.github.io/Lists/adguard/drugs-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Crypto",
+      "source": "https://blocklistproject.github.io/Lists/adguard/crypto-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Ads",
+      "source": "https://blocklistproject.github.io/Lists/adguard/ads-ags.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "blocklistproject Abuse",
+      "source": "https://blocklistproject.github.io/Lists/adguard/abuse-ags.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Ultimate.Hosts.Blacklist)",
+      "source": "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains0.list",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "Ultimate.Hosts.Blacklist)",
+      "source": "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains1.list",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "Ultimate.Hosts.Blacklist)",
+      "source": "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains2.list",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    }
+  ],
+  "exclusions_sources": ["exclusions.txt"]
+}

@@ -1,0 +1,176 @@
+! Source name: GoodbyeAds-YouTube-AdBlock-Filter (Blockes drive upload)
+||clients.l.google.com^
+||clients.l.google.com^
+
+! Source name: Zelo Big
+||shop.mango.com^
+||coingecko.com^
+||www.coingecko.com^
+
+! Source name: Prigent-Crypto, blocklistproject Crypto, EnergizedProtection ULTIMATE, Zelo intelligence
+||whattomine.com^
+||www.whattomine.com^
+
+! Source name: EnergizedProtection Xtreme Extended
+||tracker.opentrackr.org^
+||api.device.xiaomi.net^
+||api.account.xiaomi.com^
+
+! Source name: blocklistproject Crypto
+||coinmarketcap.com^
+||www.coinmarketcap.com^
+||www.binance.com^
+||binance.com^
+||bittrex.com^
+||www.bittrex.com^
+
+! Source name: blocklistproject Tracking
+||cedexis.net^
+
+! Source name: phishing_army_blocklist_extended
+||edgekey.net^
+||ot.io.mi.com^
+||ots.io.mi.com^
+||xiaomi.com^
+||spankbang.com^
+
+! Source name: blocklistproject Tracking, blockconvert
+||embed.ly^
+
+! Source name: EnergizedProtection ULTIMATE, GoodbyeAds-AdBlock-Filter
+||api.io.mi.com^
+
+! Source name: blocklistproject Ads, GoodbyeAds-AdBlock-Filter
+||api.xiaomi.com^
+
+! Source name: smartphone-ads-tracking
+||prodaa.netflix.com^
+
+! Source name: blocklistproject Tracking
+||phicdn.net^
+||elasticbeanstalk.com^
+
+! Source name: blocklistproject Ads
+||syndication.twimg.com^
+||syndication.twitter.com^
+||eporner.com^
+
+! Source name: anudeepND/blacklist/adservers, blocklistproject Ads
+||pp.userapi.com^
+
+! Source name: 1Hosts/master/Pro
+||vb-ad-fa.video.tidal.com^
+
+! Source name: blockconvert (secure.footprint.net > level3.ssl.blizzard.com)
+||embedly.com^
+||tripadvisor.com^
+||secure.footprint.net^
+||ott.io.mi.com^
+||xvideos-cdn.com^
+||www.xvideos-cdn.com^
+
+! Source name: herrbischoff/trackers (Youtube channel badges)
+||yt3.ggpht.com^
+
+! Source name: herrbischoff/domains
+||canva.com^
+
+! Source name: threatcrowd/domains
+||MI.COM^
+||mi.com^
+||cloudflare.com^
+
+! Source name: ftpmorph/smartphone-and-general-ads-analytics-regex-blocklist-ftprivacy
+||gvt*.com^
+
+! Source name: hblock (Youtube History)
+||s.youtube.com^
+
+! Source name: stonecrusher/watchlist-internet-ph
+||shein.com^
+
+! Source name: shadowWhisperer/Tracking (Blocks google maps search on app / smartscreen can be disabled if the user wants on edge browser)
+||mobilemaps-pa-gz.googleapis.com^
+||smartscreen.microsoft.com^
+||smartscreen-prod.microsoft.com^
+
+! Source name: missdeer/toblock-optimized (edgecastcdn.net > pbs.twimg.com abs.twimg.com video.twimg.com twitter video)
+||pornhub.com^
+||xvideos.com^
+||xhamster.com^
+||redtube.com^
+||www.amazon.co.uk^
+||spclient.wg.spotify.com^
+||edgecastcdn.net^
+
+! Source name: ftpmorph/smartphone-and-general-ads-analytics-regex-blocklist-ftprivacy (educamos platform cseduexneuwww03.azureedge.net)
+||wpc.v0cdn.net^
+||spotify.map.fastly.net^
+
+! Source name: TheAntiSocialEngineer/UK-Communit
+||eu.org^
+||ebaycdn.net^
+||spotifycdn.com^
+||acana.com^
+||nzxt.com^
+
+! Source name: ftpmorph/smartphone-and-general-ads-analytics-regex-blocklist-ftprivacy (Prime Video)
+||aiv-cdn.net^
+
+! Source name: herrbischoff/trackers
+||disqus.com^
+
+! Source name: tg12/pihole-phishtank-list
+||cdn.shopify.com^
+||forms.gle^
+
+! Source name: GoodbyeAds-AdBlock-Filter
+||xh.video^
+||wl.spotify.com^
+!||thirdparty.bnc.lt^
+
+!iam-py-test/antimalware ("dns.msftncsi.com" Windows/Router online check)
+131.107.255.255
+
+! Source name: mitchellkrogza/phishing-domains-INACTIVE (blocks images on gmail)
+||ci3.googleusercontent.com^
+||ci4.googleusercontent.com^
+||ci5.googleusercontent.com^
+
+! Source name: Zelo doh-vpn-proxy-bypass
+||adguard-vpn.com^
+||nordvpn.com^
+||privateinternetaccess.com^
+||expressvpn.com^
+||windscribe.com^
+||surfshark.com^
+||protonvpn.com^
+||cyberghostvpn.com^
+||ipvanish.com^
+||hide.me^
+||vyprvpn.com^
+||tunnelbear.com^
+||torguard.net^
+||torproject.org^
+||ivpn.net^
+||mullvad.net^
+
+! Source: https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
+! content regulation and windows update
+||trafficshaping.dsp.mp.microsoft.com^
+
+! Source name: shadowWhisperer/Ads
+! Source: https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads
+! Windows Push Notification Services
+||wns.windows.com^
+
+! Source name: KitsapCreator/general
+||tumblr.com^
+||www.tumblr.com^
+
+! Source name: blockconvert
+! Xvideos / Xhamster
+||fpbns.net^
+
+!tradingview images s3.tradingview.com
+||d33t3vvu2t2yu5.cloudfront.net^

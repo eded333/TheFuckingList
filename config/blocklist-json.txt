@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/phishfort/phishfort-lists/master/blacklists/domains.json
+https://raw.githubusercontent.com/Segasec/feed/master/phishing-domains.json

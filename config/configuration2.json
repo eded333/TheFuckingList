@@ -1,0 +1,642 @@
+{
+  "name": "PART2",
+  "sources": [
+    {
+      "name": "blockconvert",
+      "source": "https://raw.githubusercontent.com/mkb2091/blockconvert/master/output/adblock.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "DRSDavidSoft/additional-hosts/adservers-and-trackers",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "DRSDavidSoft/additional-hosts/activation",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/activation.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "DRSDavidSoft/additional-hosts/search-blacklist",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/search-blacklist.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "DRSDavidSoft/additional-hosts/unwanted-iranian",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "murdoch_blocklist",
+      "source": "https://raw.githubusercontent.com/suodrazah/murdoch_blocklist/master/murdoch_blocklist.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "easylist_adservers",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "marcusminus/Orthrus-BlockList",
+      "source": "https://raw.githubusercontent.com/marcusminus/Orthrus-BlockList/master/blocklist.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easylist_adservers_popup",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers_popup.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easylist_specific_block",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_specific_block.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easylist_thirdparty",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easyprivacy_tracking_Servers",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easyprivacy_tracking_Servers_international",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty_international.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "adult_adservers_popup",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers_popup.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "easylist_cookie_thirdparty",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/easylist_cookie/easylist_cookie_thirdparty.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "fanboy_annoyance_thirdparty",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/fanboy-addon/fanboy_annoyance_thirdparty.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "amp-hosts-extended",
+      "source": "https://www.github.developerdan.com/hosts/lists/amp-hosts-extended.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "ads-and-tracking-extended",
+      "source": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "dating-services-extended",
+      "source": "https://www.github.developerdan.com/hosts/lists/dating-services-extended.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "hate-and-junk-extended",
+      "source": "https://www.github.developerdan.com/hosts/lists/hate-and-junk-extended.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "fanboy_social_thirdparty",
+      "source": "https://raw.githubusercontent.com/easylist/easylist/master/fanboy-addon/fanboy_social_thirdparty.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "ftpmorph/smart-tv-ads-tracking-regex-ftprivacy",
+      "source": "https://raw.githubusercontent.com/ftpmorph/ftprivacy/master/regex-blocklists/smart-tv-ads-tracking-regex-ftprivacy.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "ftpmorph/smartphone-and-general-ads-analytics-regex-blocklist-ftprivacy",
+      "source": "https://raw.githubusercontent.com/ftpmorph/ftprivacy/master/regex-blocklists/smartphone-and-general-ads-analytics-regex-blocklist-ftprivacy.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+	{
+      "name": "ftpmorph/smartphone-ads-tracking",
+      "source": "https://raw.githubusercontent.com/ftpmorph/ftprivacy/master/blocklists/smartphone-ads-tracking.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog_w3kbl",
+      "source": "https://v.firebog.net/hosts/static/w3kbl.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "anudeepND/blacklist/adservers",
+      "source": "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "disconnect/simple_ad",
+      "source": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "Prigent-Ads",
+      "source": "https://v.firebog.net/hosts/Prigent-Ads.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "Prigent-Crypto",
+      "source": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "phishing_army_blocklist_extended",
+      "source": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "urlhaus.abuse",
+      "source": "https://urlhaus.abuse.ch/downloads/hostfile/",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "CoinBlockerLists/hosts_browser",
+      "source": "https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "youtube_ad_blocklist",
+      "source": "https://ewpratten.retrylife.ca/youtube_ad_blocklist/hosts.ipv4.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "durablenapkin_avast",
+      "source": "https://raw.githubusercontent.com/durablenapkin/block/master/avast.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "durablenapkin_home-heavy",
+      "source": "https://raw.githubusercontent.com/durablenapkin/block/master/home-heavy.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "durablenapkin_luminati",
+      "source": "https://raw.githubusercontent.com/durablenapkin/block/master/luminati.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "durablenapkin_streamingads",
+      "source": "https://raw.githubusercontent.com/durablenapkin/block/master/streaming.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "youTube_ads_4_pi-hole",
+      "source": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "herrbischoff/trackers",
+      "source": "https://git.herrbischoff.com/trackers/plain/trackers.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "herrbischoff/domains",
+      "source": "https://git.herrbischoff.com/trackers/plain/domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "herrbischoff/crap",
+      "source": "https://git.herrbischoff.com/trackers/plain/crap.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "KitsapCreator/ads",
+      "source": "https://raw.githubusercontent.com/KitsapCreator/pihole-blocklists/master/ads.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "KitsapCreator/general",
+      "source": "https://raw.githubusercontent.com/KitsapCreator/pihole-blocklists/master/general.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "KitsapCreator/malware-malicious",
+      "source": "https://raw.githubusercontent.com/KitsapCreator/pihole-blocklists/master/malware-malicious.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "KitsapCreator/scam-spam",
+      "source": "https://raw.githubusercontent.com/KitsapCreator/pihole-blocklists/master/scam-spam.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "shahidcodes/firebog-ticked-list",
+      "source": "https://raw.githubusercontent.com/shahidcodes/firebog-ticked-list/main/ads.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "iam-py-test/anti-norton-tracking",
+      "source": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/anti-norton-tracking.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "iam-py-test/antimalware",
+      "source": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/Alternative%20list%20formats/antimalware_adguard_home.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "1Hosts/master/Pro",
+      "source": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "no-qanon",
+      "source": "https://raw.githubusercontent.com/rimu/no-qanon/master/adblock.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "BlackJack8/iOSAdblockList",
+      "source": "https://raw.githubusercontent.com/BlackJack8/iOSAdblockList/master/Hosts.txt",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "neodevhost/adblocker",
+      "source": "https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "Cybo1927/Fake%20News",
+      "source": "https://raw.githubusercontent.com/Cybo1927/Hosts/master/Fake%20News",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "threatcrowd/domains",
+      "source": "https://threatcrowd.org/feeds/domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "TheAntiSocialEngineer/UK-Communit",
+      "source": "https://raw.githubusercontent.com/TheAntiSocialEngineer/AntiSocial-BlockList-UK-Community/main/UK-Community.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "sebsauvage/raw",
+      "source": "https://sebsauvage.net/hosts/raw",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "nextdns/cname-cloaking-blocklist",
+      "source": "https://raw.githubusercontent.com/nextdns/cname-cloaking-blocklist/master/domains",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "missdeer/toblock-optimized",
+      "source": "https://raw.githubusercontent.com/missdeer/blocklist/master/toblock-optimized.lst",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "joewein/dom-bl-base",
+      "source": "https://joewein.net/dl/bl/dom-bl-base.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "orca.pet/notonmyshift",
+      "source": "https://orca.pet/notonmyshift/domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "Sinfonietta/snuff-hosts",
+      "source": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "Sinfonietta/gambling-hosts",
+      "source": "https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/gambling-hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "tiuxo/porn",
+      "source": "https://raw.githubusercontent.com/tiuxo/hosts/master/porn",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "bongochong/CombinedPrivacyBlockLists",
+      "source": "https://raw.githubusercontent.com/bongochong/CombinedPrivacyBlockLists/master/newhosts-final.hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "furkun/ProtectorHosts",
+      "source": "https://raw.githubusercontent.com/furkun/ProtectorHosts/main/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "gwillem/burner-domains",
+      "source": "https://raw.githubusercontent.com/gwillem/magento-malware-scanner/master/rules/burner-domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "hell-sh/Evil-Domains",
+      "source": "https://raw.githubusercontent.com/hell-sh/Evil-Domains/master/evil-domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "merkleID/covid-domains",
+      "source": "https://raw.githubusercontent.com/merkleID/covid-domains/master/full-domains-list.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "pornaway/porn_ads",
+      "source": "https://raw.githubusercontent.com/mhxion/pornaway/master/hosts/porn_ads.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "mitchellkrogza/phishing-domains-ACTIVE",
+      "source": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "mitchellkrogza/phishing-domains-NEW-today",
+      "source": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-NEW-today.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "mitchellkrogza/phishing-domains-NEW-last-hour",
+      "source": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-NEW-last-hour.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "no-cmyk/Search-Engine-Spam-Blocklist",
+      "source": "https://raw.githubusercontent.com/no-cmyk/Search-Engine-Spam-Blocklist/master/blocklist.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "RooneyMcNibNug/TheMillionDollarBlocklist",
+      "source": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/TheMillionDollarBlocklist.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "TonyRL/blocklist",
+      "source": "https://raw.githubusercontent.com/TonyRL/blocklist/master/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "tg12/pihole-phishtank-list",
+      "source": "https://raw.githubusercontent.com/tg12/pihole-phishtank-list/master/list/phish_domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "stonecrusher/watchlist-internet-ph",
+      "source": "https://raw.githubusercontent.com/stonecrusher/filterlists-pihole/master/watchlist-internet-ph.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "stamparm/aux",
+      "source": "https://raw.githubusercontent.com/stamparm/aux/master/maltrail-malware-domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "soteria-nou/analytics",
+      "source": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/analytics.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "soteria-nou/ads",
+      "source": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/ads.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "soteria-nou/enrichments",
+      "source": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/enrichments.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "soteria-nou/fake",
+      "source": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/fake.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "soteria-nou/affiliate",
+      "source": "https://raw.githubusercontent.com/soteria-nou/domain-list/master/affiliate.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Typo",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Typo",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Tracking",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Scam",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Scam",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Marketing-Email",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Marketing-Email",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Marketing",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Marketing",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Malware",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Junk",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Junk",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "shadowWhisperer/Ads",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Ads",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog",
+      "source": "https://v.firebog.net/hosts/neohostsbasic.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "firebog",
+      "source": "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "firebog",
+      "source": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "firebog",
+      "source": "https://v.firebog.net/hosts/Prigent-Malware.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "firebog",
+      "source": "https://v.firebog.net/hosts/Shalla-mal.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+	{
+      "name": "privacy-protection-tools/anti-AD/master/anti-ad-domains",
+      "source": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "iam-py-test/google-safe-browsing-reverse-engineered",
+      "source": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/special_lists/google-safe-browsing-reverse-engineered.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "iam-py-test/microsoft-smart-screen-reverse-engineered",
+      "source": "https://raw.githubusercontent.com/iam-py-test/my_filters_001/main/special_lists/microsoft-smart-screen-reverse-engineered.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "curben/phishing-filter-agh",
+      "source": "https://curben.gitlab.io/malware-filter/phishing-filter-agh.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "curben/pup-filter-agh",
+      "source": "https://curben.gitlab.io/malware-filter/pup-filter-agh.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    }
+  ],
+  "exclusions_sources": ["exclusions.txt"]
+}
