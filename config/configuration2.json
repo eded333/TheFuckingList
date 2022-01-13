@@ -636,6 +636,12 @@
       "source": "https://curben.gitlab.io/malware-filter/pup-filter-agh.txt",
       "type": "adblock",
 	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "AdguardTeam/cname-trackers",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt",
+      "type": "adblock",
+	  "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
     }
   ],
   "exclusions_sources": ["exclusions.txt"]

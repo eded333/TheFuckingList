@@ -9,9 +9,9 @@
 
 ## Description
 
-A collection of 100+ blocklists, updated daily, compiled with adguards hostlist-compiler, deduped, pruned of dead domains and sprinkled with some personal exclusions and exceptions for my use case.
+A collection of 100+ blocklists, updated daily, deduped, pruned of dead domains and sprinkled with some personal exclusions and exceptions for my use case.
 
-Compiled as adblock format for AdguardHome, as domains for pihole and transformed into compressed host format (9 hosts per line).
+Compiled as adblock format for AdguardHome, as domains for Pihole and transformed into compressed host format (9 hosts per line).
 
 Beware false positives ahead.
 
@@ -23,7 +23,7 @@ This is a restrictive blocklist, although I keep adding legit domains to the lim
 
 ## Size matters
 
-I have resorted to prune the blocklists of dead domains creating a dead domain list, [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt).
+I have resorted to pruning the blocklist of dead domains creating a dead domain list, [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt).
 
 The deadlist is monitored to remove from it any domain that become active again.
 
@@ -35,7 +35,7 @@ Feel free to report issues or suggestions.
 
 ## Credits
 
-A huge thanks to the maintainers of the [sources](https://raw.githubusercontent.com/eded333/TheFuckingList/main/sources.txt).
+A huge thanks to the maintainers of the [sources](https://raw.githubusercontent.com/eded333/TheFuckingList/main/SOURCES.txt).
 
-mmotti, oisd, jerryn70, hblock, Zelo72, crazy-max, StevenBlack, mitchellkrogza, Spam404, durablenapkin, Perflyst, curben, oneoffdallas, notracking, DandelionSprout, EnergizedProtection, someonewhocares, blocklistproject, Ultimate-Hosts-Blacklist, mkb2091, DRSDavidSoft, suodrazah, easylist, marcusminus, developerdan, ftpmorph, WaLLy3K, anudeepND, Disconnect, Prigent, phishing army, urlhaus, zerodot1, Ewpratten, kboghdady, herrbischoff, KitsapCreator, shahidcodes, badmojr, rimu, BlackJack8, neodevpro, threatcrowd, TheAntiSocialEngineer, sebsauvage, nextdns, missdeer, joewein, Socram, Sinfonietta, tiuxo, bongochong, furkun, gwillem, hell-sh, merkleID, mhxion, mitchellkrogza, no-cmyk, RooneyMcNibNug, TonyRL, tg12, stonecrusher, stamparm, soteria-nou, ShadowWhisperer, matomo-org, VeleSila, firebog, neohosts, RooneyMcNibNug, bigdargon, frogeye, Perflyst, Shalla-mal, privacy-protection-tools, iam-py-test, Segasec, Phishfort.
+mmotti, oisd, jerryn70, hblock, Zelo72, crazy-max, StevenBlack, mitchellkrogza, Spam404, durablenapkin, Perflyst, curben, oneoffdallas, notracking, DandelionSprout, EnergizedProtection, someonewhocares, blocklistproject, Ultimate-Hosts-Blacklist, mkb2091, DRSDavidSoft, suodrazah, easylist, marcusminus, developerdan, ftpmorph, WaLLy3K, anudeepND, Disconnect, Prigent, phishing army, urlhaus, zerodot1, Ewpratten, kboghdady, herrbischoff, KitsapCreator, shahidcodes, badmojr, rimu, BlackJack8, neodevpro, threatcrowd, TheAntiSocialEngineer, sebsauvage, nextdns, missdeer, joewein, Socram, Sinfonietta, tiuxo, bongochong, furkun, gwillem, hell-sh, merkleID, mhxion, mitchellkrogza, no-cmyk, RooneyMcNibNug, TonyRL, tg12, stonecrusher, stamparm, soteria-nou, ShadowWhisperer, matomo-org, VeleSila, firebog, neohosts, RooneyMcNibNug, bigdargon, frogeye, Perflyst, Shalla-mal, privacy-protection-tools, iam-py-test, Segasec, Phishfort, AdguardTeam.
 

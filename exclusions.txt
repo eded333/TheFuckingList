@@ -174,3 +174,6 @@
 
 !tradingview images s3.tradingview.com
 ||d33t3vvu2t2yu5.cloudfront.net^
+
+! Source name: no-cmyk/Search-Engine-Spam-Blocklist (docs.pi-hole.net)
+||netlify.app^
