@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/eded333/TheFuckingList) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/eded333/TheFuckingList) ![GitHub issues](https://img.shields.io/github/issues/eded333/TheFuckingList) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eded333/TheFuckingList) ![GitHub repo size](https://img.shields.io/github/repo-size/eded333/TheFuckingList)
+![GitHub last commit](https://img.shields.io/github/last-commit/eded333/TheFuckingList)
 
 # TheFuckingList
 | List 																							 | Description 										 | Includes 																																														                                                                                |
