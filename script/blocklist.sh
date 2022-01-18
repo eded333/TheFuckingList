@@ -10,9 +10,47 @@ rm -rf adguardhome.txt
 rm -rf *_tmp.txt
 
 #Collect domain blocklists and clean, piped to reduce writes
-wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/blocklist-links.txt | sed 's/"//g;s/,//g;s/[[]//g;s/[]]//g;s/0\.0\.0\.0//g;s/127\.0\.0\.1//g;s/ //g;s/:://g;s/localhost$//g;s/#.*//g;s/!.*//g;/</d;s/[[:blank:]]//g;s/[[:space:]]//g;/^[[:space:]]*$/d;/^[>=|]/d' | sort -f -u > domain_tmp.txt
-wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/blocklist-json.txt | sed 's/"//g;s/,//g;s/[[]//g;s/[]]//g;s/[[:blank:]]//g;s/[[:space:]]//g;/^[[:space:]]*$/d' > domain_extra_tmp.txt
-wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/dead.txt | sed 's/#.*//g;s/!.*//g;/</d;s/[[:blank:]]//g;s/[[:space:]]//g;/^[[:space:]]*$/d;/^[>=|]/d' > domain_exclusions_tmp.txt
+wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/blocklist-links.txt | 
+sed '
+s/"//g;
+s/,//g;
+s/[[]//g;
+s/[]]//g;
+s/0\.0\.0\.0//g;
+s/127\.0\.0\.1//g;
+s/ //g;
+s/:://g;
+s/localhost$//g;
+s/#.*//g;
+s/!.*//g;
+/</d;
+s/[[:blank:]]//g;
+s/[[:space:]]//g;
+/^[[:space:]]*$/d;
+/^[>=|]/d' | 
+sort -f -u > domain_tmp.txt
+
+wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/blocklist-json.txt | 
+sed '
+s/"//g;
+s/,//g;
+s/[[]//g;
+s/[]]//g;
+s/[[:blank:]]//g;
+s/[[:space:]]//g;
+/^[[:space:]]*$/d' | 
+sort -f -u > domain_extra_tmp.txt
+
+wget --quiet --show-progress --output-document=- --input-file=~/TheFuckingList/config/dead.txt | 
+sed '
+s/#.*//g;
+s/!.*//g;
+/</d;
+s/[[:blank:]]//g;
+s/[[:space:]]//g;
+/^[[:space:]]*$/d;
+/^[>=|]/d' | 
+sort -f -u > domain_exclusions_tmp.txt
 
 #Prepare and group exclusions
 cat exclusions.txt | egrep '^\|\|' | cut -d'/' -f1 | cut -d '^' -f1 | cut -d '$' -f1 | tr -d '|' >> domain_exclusions_tmp.txt
@@ -28,6 +66,7 @@ awk '{if (f==1) { r[$0] } else if (! ($0 in r)) { print $0 } } ' f=1 domain_excl
 
 #Add 0.0.0.0 compress into 9 hosts per line
 cat pihole.txt | sed 's/^/0.0.0.0 /' | grep "^0" | sed "s/0\.0\.0\.0//g" | tr -d "\n" | egrep -o '\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+' | sed 's/^/0\.0\.0\.0 /g' >> hosts_nine.txt
+tail -n 8 pihole.txt | sed 's/^/0.0.0.0 /' >> hosts_nine.txt
 
 #Transform to adblock format, create blocklist, dedupe.
 sed --in-place 's/^/||/;s/$/^/' domain_exclusions_tmp.txt
