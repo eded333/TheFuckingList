@@ -1,4 +1,0 @@
-! Title: The Fucking List
-! Description: A collection of 100+ blocklists, updated daily, deduped, pruned of dead domains and sprinkled with some personal exclusions and exceptions for my use case.
-! Homepage: https://github.com/eded333/TheFuckingList
-! License: MIT
