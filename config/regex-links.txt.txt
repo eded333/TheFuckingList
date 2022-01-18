@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/mmotti/adguard-home-filters/master/regex.txt
+https://oisd.nl/edropRegexed.php
