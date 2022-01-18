@@ -65,14 +65,23 @@ sort -f -u -o domain_exclusions_tmp.txt domain_exclusions_tmp.txt
 awk '{if (f==1) { r[$0] } else if (! ($0 in r)) { print $0 } } ' f=1 domain_exclusions_tmp.txt f=2 domain_tmp.txt > pihole.txt
 
 #Add 0.0.0.0 compress into 9 hosts per line
-cat pihole.txt | sed 's/^/0.0.0.0 /' | grep "^0" | sed "s/0\.0\.0\.0//g" | tr -d "\n" | egrep -o '\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+' | sed 's/^/0\.0\.0\.0 /g' >> hosts_nine.txt
-tail -n 8 pihole.txt | sed 's/^/0.0.0.0 /' >> hosts_nine.txt
+cat pihole.txt | sed 's/^/0.0.0.0 /' | grep "^0" | sed "s/0\.0\.0\.0//g" | tr -d "\n" | egrep -o '\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+' | sed 's/^/0\.0\.0\.0 /g' > hosts_nine.txt
+tail -n 8 pihole.txt | sed 's/^/0.0.0.0 /' | grep "^0" | sed "s/0\.0\.0\.0//g" | tr -d "\n" | egrep -o '\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+' | sed 's/^/0\.0\.0\.0 /g' >> hosts_nine.txt
 
-#Transform to adblock format, create blocklist, dedupe.
+#Transform to adblock format, create blocklist, dedupe. HostlistCompiler needs a loop if a source fails to respond in time.
 sed --in-place 's/^/||/;s/$/^/' domain_exclusions_tmp.txt
 sed --in-place 's/^/||/;s/$/^/' domain_extra_tmp.txt
-node --max-old-space-size=15072 --optimize-for-size ~/HostlistCompiler/src/cli.js -c ~/TheFuckingList/config/configuration1.json -o blocklista_tmp.txt
-node --max-old-space-size=15072 --optimize-for-size ~/HostlistCompiler/src/cli.js -c ~/TheFuckingList/config/configuration2.json -o blocklistb_tmp.txt
+
+while [ ! -f blocklista_tmp.txt ]
+do
+	node --max-old-space-size=15072 --optimize-for-size ~/HostlistCompiler/src/cli.js -c ~/TheFuckingList/config/configuration1.json -o blocklista_tmp.txt
+done
+
+while [ ! -f blocklistb_tmp.txt ] 
+do
+	node --max-old-space-size=15072 --optimize-for-size ~/HostlistCompiler/src/cli.js -c ~/TheFuckingList/config/configuration2.json -o blocklistb_tmp.txt
+done
+
 cat blocklista_tmp.txt blocklistb_tmp.txt domain_extra_tmp.txt | awk '!a[$0]++' > blocklist_sorted_tmp.txt
 awk '{if (f==1) { r[$0] } else if (! ($0 in r)) { print $0 } } ' f=1 domain_exclusions_tmp.txt f=2 blocklist_sorted_tmp.txt > adguardhome.txt
 
