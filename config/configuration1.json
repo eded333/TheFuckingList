@@ -1,8 +1,8 @@
 {
-  "name": "The Fucking List",
-  "description": "Updated every 12h, compilation of 100+ block lists, deduped, with some personal exclusions and exceptions.",
+  "name": "TheFuckingList",
+  "description": "A collection of 100+ blocklists, updated daily, deduped, pruned of dead domains and sprinkled with some personal exclusions and exceptions for my use case.",
   "homepage": "https://github.com/eded333/TheFuckingList",
-  "license": "GPLv3",
+  "license": "MIT",
   "sources": [
     {
       "name": "whitelist",
@@ -113,8 +113,14 @@
       "transformations": ["RemoveComments", "Compress", "Validate"]
     },
     {
-      "name": "OISD Domain Blocklist",
+      "name": "OISD Blocklist",
       "source": "https://abp.oisd.nl/",
+      "type": "adblock",
+      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "OISD Blocklist extra",
+      "source": "https://abp.oisd.nl/extra/",
       "type": "adblock",
       "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
     },
