@@ -262,9 +262,15 @@
       "type": "hosts",
       "transformations": ["RemoveComments", "Compress", "Validate"]
     },
-    {
+	{
       "name": "Ultimate.Hosts.Blacklist)",
       "source": "https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains2.list",
+      "type": "hosts",
+      "transformations": ["RemoveComments", "Compress", "Validate"]
+    },
+    {
+      "name": "kboghdady/youTube_ads_4_pi-hole)",
+      "source": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
       "type": "hosts",
       "transformations": ["RemoveComments", "Compress", "Validate"]
     }
