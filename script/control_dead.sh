@@ -39,7 +39,7 @@ P6=$!
 cat temp_deadlist-07 | ./parse.sh > temp_undeadomains-7 &
 P7=$!
 wait $P0 $P1 $P2 $P3 $P4 $P5 $P6 $P7
-sleep 300
+sleep 10
 
 #Backup
 cat ~/deadlist.txt > ~/deadlist.backup.`date +"%d-%m-%Y"`.txt
