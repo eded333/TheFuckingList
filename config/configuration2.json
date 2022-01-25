@@ -224,12 +224,6 @@
       "transformations": ["RemoveComments", "Compress", "Validate"]
     },
     {
-      "name": "youTube_ads_4_pi-hole",
-      "source": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
-      "type": "hosts",
-      "transformations": ["RemoveComments", "Compress", "Validate"]
-    },
-    {
       "name": "herrbischoff/trackers",
       "source": "https://git.herrbischoff.com/trackers/plain/trackers.txt",
       "type": "hosts",

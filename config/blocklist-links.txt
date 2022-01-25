@@ -63,7 +63,6 @@ https://raw.githubusercontent.com/durablenapkin/block/master/avast.txt
 https://raw.githubusercontent.com/durablenapkin/block/master/home-heavy.txt
 https://raw.githubusercontent.com/durablenapkin/block/master/luminati.txt
 https://raw.githubusercontent.com/durablenapkin/block/master/streaming.txt
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
 https://git.herrbischoff.com/trackers/plain/trackers.txt
 https://git.herrbischoff.com/trackers/plain/domains.txt
 https://git.herrbischoff.com/trackers/plain/crap.txt
@@ -137,6 +136,5 @@ https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blackl
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains1.list
 https://raw.githubusercontent.com/Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist/master/domains/domains2.list
 https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers_justdomains.txt
-https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
 https://raw.githubusercontent.com/phishfort/phishfort-lists/master/blacklists/domains.json
 https://raw.githubusercontent.com/Segasec/feed/master/phishing-domains.json
