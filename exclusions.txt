@@ -178,3 +178,7 @@
 
 ! Source name: no-cmyk/Search-Engine-Spam-Blocklist (docs.pi-hole.net)
 ||netlify.app^
+
+! Source name: Ultimate.Hosts.Blacklist
+||androidauthority.com^
+
