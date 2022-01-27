@@ -182,3 +182,7 @@
 ! Source name: Ultimate.Hosts.Blacklist
 ||androidauthority.com^
 
+! Source name: no-cmyk/Search-Engine-Spam-Blocklist
+||duckdns.org^
+
+
