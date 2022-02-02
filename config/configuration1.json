@@ -41,30 +41,6 @@
       "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
     },
     {
-      "name": "Zelo intelligence",
-      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/threat-intelligence.adblock",
-      "type": "adblock",
-      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
-    },
-    {
-      "name": "Zelo doh-vpn-proxy-bypass",
-      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/doh-vpn-proxy-bypass.adblock",
-      "type": "adblock",
-      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
-    },
-    {
-      "name": "Zelo Big",
-      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/big.adblock",
-      "type": "adblock",
-      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
-    },
-    {
-      "name": "Zelo affiliate",
-      "source": "https://raw.githubusercontent.com/Zelo72/adguard/main/affiliatetracking.adblock",
-      "type": "adblock",
-      "transformations": ["RemoveComments", "RemoveModifiers", "Validate"]
-    },
-    {
       "name": "WindowsSpyBlocker Spy",
       "source": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
       "type": "hosts",
