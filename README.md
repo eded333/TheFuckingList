@@ -3,9 +3,9 @@
 # TheFuckingList
 | List 																							 | Description 										 | Includes 																																														                                                                                |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|[Adblock Format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/adguardhome.txt) |Use with AdguardHome, Adguard, uBlock Origin		 |[whitelist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/whitelist.txt) - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt) - [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt)	|
-|[Domain format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/pihole.txt) 	 	 |Use with Pihole 						             | - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt) - [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt)																	  		                |
-|[Hosts format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/hosts_nine.txt)	 |Use as Hostfile							         | - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt) - [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt)                                                        			  		                |
+|[Adblock Format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/adguardhome.txt) |Use with AdguardHome, Adguard, uBlock Origin		 |[whitelist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/whitelist.txt) - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt)	|
+|[Domain format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/pihole.txt) 	 	 |Use with Pihole 						             | - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt)																	  		                |
+|[Hosts format](https://raw.githubusercontent.com/eded333/TheFuckingList/main/hosts_nine.txt)	 |Use as Hostfile							         | - [exclusions](https://raw.githubusercontent.com/eded333/TheFuckingList/main/exclusions.txt)                                                        			  		                |
 
 ## Description
 
@@ -21,14 +21,6 @@ Beware false positives ahead.
 
 This is a restrictive blocklist, although I keep adding legit domains to the limited exclusion list it is recommended to use a whitelist, as it will probably break some of the services you use. E.g. Facebook.
 
-## Size matters
-
-I have resorted to pruning the blocklist of dead domains creating a dead domain list, [deadlist](https://raw.githubusercontent.com/eded333/TheFuckingList/main/deadlist.txt).
-
-The deadlist is monitored to remove from it any domain that become active again.
-
-More infrequently the deadlist will be refreshed to catch new dead or invalid domains.
-
 ## Issues/Suggestions
 
 Feel free to report issues or suggestions.
@@ -38,4 +30,3 @@ Feel free to report issues or suggestions.
 A huge thanks to the maintainers of the [sources](https://raw.githubusercontent.com/eded333/TheFuckingList/main/SOURCES.txt).
 
 mmotti, oisd, jerryn70, hblock, crazy-max, StevenBlack, mitchellkrogza, Spam404, durablenapkin, Perflyst, curben, oneoffdallas, notracking, DandelionSprout, EnergizedProtection, someonewhocares, blocklistproject, Ultimate-Hosts-Blacklist, mkb2091, DRSDavidSoft, suodrazah, easylist, marcusminus, developerdan, ftpmorph, WaLLy3K, anudeepND, Disconnect, Prigent, phishing army, urlhaus, zerodot1, Ewpratten, herrbischoff, KitsapCreator, shahidcodes, badmojr, rimu, BlackJack8, neodevpro, threatcrowd, TheAntiSocialEngineer, sebsauvage, nextdns, missdeer, joewein, Socram, Sinfonietta, tiuxo, bongochong, furkun, gwillem, hell-sh, merkleID, mhxion, mitchellkrogza, no-cmyk, RooneyMcNibNug, TonyRL, tg12, stonecrusher, stamparm, soteria-nou, ShadowWhisperer, matomo-org, VeleSila, firebog, neohosts, RooneyMcNibNug, bigdargon, frogeye, Perflyst, Shalla-mal, privacy-protection-tools, iam-py-test, Segasec, Phishfort, AdguardTeam.
-
