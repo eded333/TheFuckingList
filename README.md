@@ -9,7 +9,7 @@
 
 ## Description
 
-A collection of 100+ blocklists, updated daily, deduped, pruned of dead domains and sprinkled with some personal exclusions and exceptions for my use case.
+A collection of 100+ blocklists, updated daily, deduped and sprinkled with some personal exclusions and exceptions for my use case.
 
 Compiled as adblock format for AdguardHome, as domains for Pihole and transformed into compressed host format (9 hosts per line).
 
